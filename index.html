@@ -434,6 +434,9 @@
     </div>
 
     <form id="waitlistForm">
+         <input type="hidden" name="access_key" value="05556f5f-e561-4318-b86e-afce0156b202">
+      <input type="hidden" name="subject" value="New ACP waitlist signup">
+      <input type="checkbox" name="botcheck" style="display:none;">
       <div class="field">
         <label for="firstName">First name <span class="opt">optional</span></label>
         <input type="text" id="firstName" name="firstName" autocomplete="given-name">
@@ -493,7 +496,7 @@
   // ===== WIRING: paste your form endpoint below to go live =====
   // Formspree example: 'https://formspree.io/f/xxxxxxx'
   // Kit/ConvertKit form action, or a Zapier/Make webhook also work.
-  const FORM_ENDPOINT = ''; // <-- paste endpoint URL here
+  const FORM_ENDPOINT = 'https://api.web3forms.com/submit';
 
   // Auto-tag signups by event. Share links like:
   //   shehasleverage.com/waitlist?src=portfolia-summit
